@@ -1,0 +1,5 @@
+---
+- name: Creating ec2 instance through Ansible
+  hosts: localhost
+  roles: 
+    - admin

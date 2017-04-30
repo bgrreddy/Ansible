@@ -1,0 +1,12 @@
+---
+- name: creating a new ec2
+  ec2:
+    key_name: goutham
+    instance_type: t2.micro
+    image: ami-6f68cf0f
+    wait: yes
+    group: dev_securitygroup
+    count: 1
+    vpc_subnet_id: subnet-23a98a7b
+    assign_public_ip: yes
+    region: us-west-2
